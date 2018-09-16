@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<title>CSS Layouts</title>
+	<link rel="stylesheet" href="main.css">
+	<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Ice Fall V2</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Ice Fall V2 (Web 2).json", {onProgress: UnityProgress});
+    </script>
+</head>
+
+<body>
+<header>
+	<nav>
+		<h1>Hunter's Sick Lad Games</h1>
+		<ul><ul>
+	</ul>
+	</nav>
+</header>
+
+<p>Download to a game I made recently:<p>
+<a href="Ice Fall V2.zip" download="Ice Fall V2">
+	<img src="IFV2Icon.png" alt="Ice Fall V2" width = "50" height="50">
+</a>
+
+<p>Download to a bad game I made a long time ago:<p>
+
+<a href="Don't Get Spiked.zip" download="Don't Get Spiked">
+  <img src="DGSIcon.jpg" alt="Don't Get Spiked" width="50" height="50">
+</a>
+
+<p><b>Note:</b> Downloads are not supported in Edge version 12, IE, Safari or Opera version 12 (and earlier).</p>
+
+<div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Ice Fall V2</div>
+      </div>
+    </div>
+
+<footer></footer>
+
+	</body>
+
+</html>
